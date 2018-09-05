@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "GET HELLO",
+            "program": "${workspaceFolder}/node_modules/.bin/serverless",
+            "args": ["invoke", "local", "-f", "getHello", "--data", "{}"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "POST HELLO",
+            "program": "${workspaceFolder}/node_modules/.bin/serverless",
+            "args": ["invoke", "local", "-f", "postHello", "--path", "debug/post_hello"]
+        }
+    ]
+}

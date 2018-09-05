@@ -1,0 +1,28 @@
+service: hello-world-apis 
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+stage: dev
+region: ap-south-1
+
+functions:
+  getHello:
+    handler: handler.getHello
+    memorySize: 128
+    events:
+     - http:
+         path: hello
+         method: get
+
+  postHello:
+    handler: handler.postHello
+    memorySize: 128
+    events:
+     - http:
+         path: hello
+         method: post
+
+plugins:
+  - serverless-offline
