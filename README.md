@@ -1,4 +1,4 @@
-# Execute/Debug Serverless on Local
+# Execute/Debug Serverless(NodeJS) on Local
 
 This is a project what created by me when I was first starting with serverless. Serverless sounded really awesome with all its benefits. But, as a developer before starting the most important aspects like local execution and debugging were not straight forward.
 
